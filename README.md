@@ -79,6 +79,9 @@ r.new_order("BTCUSD", "200", "6000", "buy")
 ```python
 r.cancel_order("866403510")
 ```
+- [wrap_order](https://docs.gemini.com/rest-api/#wrap-order)
+```python
+r.wrap_order("1000", "sell", "GUSDUSD")
 - [cancel_session_orders](https://docs.gemini.com/rest-api/#cancel-all-session-orders)
 ```python
 r.cancel_session_orders()
