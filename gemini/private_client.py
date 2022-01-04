@@ -165,7 +165,7 @@ class PrivateClient(PublicClient):
             'amount': amount,
             'side': side
         }
-        return self.api_query('/v1/wrap/'+symbol, payload)
+        return self.api_query('/v1/wrap/{}'.format(symbol), payload)
 
     def cancel_session_orders(self):
         """
@@ -331,7 +331,7 @@ class PrivateClient(PublicClient):
         Fund Manager role added.
 
         Args:
-            current(str): Can either be btc or eth
+            currency(str): Can either be btc or eth
             address(str): The address you want the money to be sent to
             amount(str): Amount you want to transfer
 
